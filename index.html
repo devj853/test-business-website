@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-	    <script src="pixel.js"></script>
-	<script>
+	   
+</head>
+<body class="is-boxed has-animations">
+	<div id="main"></div>
+  <script src="pixel.js"></script>
+  <script>
     var value = Math.floor(Math.random() * Math.floor(100));
     var params = {
       value: value,
@@ -34,8 +38,6 @@
     fbq('trackCustom', 'ACustomEvent', {custom_param: 'custom_value'});
     document.getElementById("main").innerHTML = "Triggered";
   </script>
-</head>
-<body class="is-boxed has-animations">
 
     <div class="body-wrap">
         <header class="site-header">
